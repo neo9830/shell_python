@@ -1,34 +1,14 @@
-[![progress-banner](https://backend.codecrafters.io/progress/shell/d227ebe2-b2ab-4313-8cbf-547b9314cd99)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
-
-This is a starting point for Python solutions to the
-["Build Your Own Shell" Challenge](https://app.codecrafters.io/courses/shell/overview).
-
-In this challenge, you'll build your own POSIX compliant shell that's capable of
-interpreting shell commands, running external programs and builtin commands like
-cd, pwd, echo and more. Along the way, you'll learn about shell command parsing,
-REPLs, builtin commands, and more.
-
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
-
-# Passing the first stage
-
-The entry point for your `shell` implementation is in `app/main.py`. Study and
-uncomment the relevant code, and push your changes to pass the first stage:
-
-```sh
-git commit -am "pass 1st stage" # any msg
-git push origin master
-```
-
-Time to move on to the next stage!
-
-# Stage 2 & beyond
-
-Note: This section is for stages 2 and beyond.
-
-1. Ensure you have `python (3.11)` installed locally
-1. Run `./your_program.sh` to run your program, which is implemented in
-   `app/main.py`.
-1. Commit your changes and run `git push origin master` to submit your solution
-   to CodeCrafters. Test output will be streamed to your terminal.
+This project is to implement the standard builtin functionalities of a command shell in Python. This is part of a coding challenge for codecrafters.io. In this project I have implemented the following:
+1. Implementing a shell prompt($) and waiting for user input.
+2. Printing basic prompts using the echo command.
+3. Handling invalid commands and printing exception messages in the terminal
+4. Implementing a REPL(Read-Eval-Print Loop) function.
+5. Implementing exit 0 command which terminates the process with code/status 0.
+6. Implementing the type built in command for the shell.
+7. Extending the type built in command to search for executables files using PATH
+8. Implementing execution of external programs which are located using the PATH environment variable.
+9. Implementing the pwd built in command for printing the working directory using the os module in Python.
+10. Implementing the cd built in command for handling the absoulte paths.
+11. Extending the cd built in command for handling the relative paths.
+12. Extending the cd built in command for handling the '~' Home directory.
+    Planning to extend this project for support quoting the single quotes, double quuotes, backslash outside quotes, backslash within single quotes, backslash within double quotes and executing a quuoted executable.
